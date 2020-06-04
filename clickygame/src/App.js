@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ImageCard from './components/ImageCard';
 import images from './images.json';
-import Wrapper from './components/Wrapper'
+import Wrapper from './components/Wrapper';
+import Container from './components/Container'
 
 class App extends Component {
 
@@ -12,12 +13,15 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        {this.state.images.map(friend => (
-          <ImageCard
-            id={friend.id}
-            image={friend.image}
+        <Container>
+          {this.state.images.map(friend => (
+            <ImageCard
+              id={friend.id}
+              image={friend.image}
           />
         ))}
+        </Container>
+        
       </Wrapper>
       
       
