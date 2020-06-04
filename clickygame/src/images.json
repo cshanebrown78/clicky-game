@@ -1,0 +1,76 @@
+[
+    {
+      "id": 1,
+      "name": "Stewie",
+      "image": "https://vignette.wikia.nocookie.net/villains/images/e/ea/Stewie.png/revision/latest?cb=20200126094937",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "Peter",
+      "image": "https://vignette.wikia.nocookie.net/villains/images/c/c2/Peter_Griffin.png/revision/latest/top-crop/width/360/height/450?cb=20181009180421",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "Lois",
+      "image": "https://vignette.wikia.nocookie.net/fictionalfighters/images/1/1a/Lois-griffin.png/revision/latest/top-crop/width/360/height/450?cb=20150508195915",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "name": "Meg",
+      "image": "https://vignette.wikia.nocookie.net/familyguy/images/4/4b/FGuy_Meg_Gen2012_R3Flat.jpg/revision/latest/top-crop/width/360/height/360?cb=20120905122204",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "Quagmire",
+      "image": "https://vignette.wikia.nocookie.net/family-guy-the-quest-for-stuff/images/3/32/Facespace_portrait_quagmire_default%404x.png/revision/latest/scale-to-width-down/340?cb=20140420142532",
+      "selected": false
+    },
+    {
+      "id": 6,
+      "name": "Brian",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Brian_Griffin.png/195px-Brian_Griffin.png",
+      "selected": false
+    },
+    {
+      "id": 7,
+      "name": "Joe",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/9/9c/190px-Joe_Swanson.png/revision/latest/top-crop/width/360/height/450?cb=20120114143255&path-prefix=protagonist",
+      "selected": false
+    },
+    {
+      "id": 8,
+      "name": "Chris",
+      "image": "https://vignette.wikia.nocookie.net/familyguyfanon/images/d/df/Chris_Griffin.png/revision/latest/scale-to-width-down/340?cb=20161119032747",
+      "selected": false
+    },
+    {
+      "id": 9,
+      "name": "Cleveland",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/e4/Cleveland_Brown.png",
+      "selected": false
+    },
+    {
+      "id": 10,
+      "name": "Adam",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/6/61/Character-adam-west.png/revision/latest/top-crop/width/360/height/450?cb=20150727155550&path-prefix=protagonist",
+      "selected": false
+    },
+    {
+      "id": 11,
+      "name": "Herbert",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Herbert_-_Family_Guy.png/250px-Herbert_-_Family_Guy.png",
+      "selected": false
+    },
+    {
+      "id": 12,
+      "name": "Tom",
+      "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/13/135098/6805214-tom-tucker.jpg",
+      "selected": false
+    }
+
+
+  ]
