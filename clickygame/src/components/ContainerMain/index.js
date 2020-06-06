@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 
-function Container(props) {
+function ContainerMain(props) {
     return <div className="container">{props.children}</div>
 }
 
-export default Container;
+export default ContainerMain;

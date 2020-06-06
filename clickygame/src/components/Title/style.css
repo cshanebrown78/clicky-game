@@ -1,0 +1,25 @@
+.navbar li {
+    display: inline-block;
+    padding: 25px 0;
+    width: 33.3%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+    width: 100%
+}
+
+.navbar {
+    min-height: 65px;
+    position: fixed;
+    width: 100%;
+    white-space: nowrap;
+    background: rgb(50, 50, 119);
+    color: white;
+    z-index: 99;
+    font-size: 26px
+}
+
+
+
