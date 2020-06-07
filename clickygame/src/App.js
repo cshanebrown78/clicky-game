@@ -13,7 +13,8 @@ class App extends Component {
     images,
     score : 0,
     message : "Test your memory",
-    userChoice: []
+    userChoice: [],
+    topScore: 0
   };
 
   shuffleImg = id => {
@@ -21,7 +22,12 @@ class App extends Component {
       console.log(userChoice);
 
     if (userChoice.includes(id)) {
-      this.setState({score: 0, userChoice: [], message: "OOPs!! You already picked that image"});
+      console.log(userChoice.length)
+      console.log(this.state.topScore)
+      if (userChoice.length > this.state.topScore) {
+        this.setState({topScore: userChoice.length})
+      }
+      this.setState({score: 0, userChoice: [], message: "OOPs!! Game Over.  Pick an image to restart."});
       return;
     } else {
       userChoice.push(id)
@@ -32,7 +38,6 @@ class App extends Component {
       }
 
       this.setState({ images, score : userChoice.length, message: "You're doing good!"});
-
       for (let i = images.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [images [i], images [j]] = [images[j], images[i]];
@@ -44,7 +49,11 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title></Title>
+        <Title
+          message={this.state.message}
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
         <Instructions></Instructions>
           <ContainerMain>
             {this.state.images.map(character => (
