@@ -8,4 +8,4 @@ User clicks on an image and then the images are shuffled.  The purpose of the ga
 
 ### Links
 GitHub Repo: https://github.com/cshanebrown78/clicky-game
-App: 
+App: https://cshanebrown78.github.io/clicky-game/
