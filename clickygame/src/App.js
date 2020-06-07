@@ -5,6 +5,7 @@ import Wrapper from './components/Wrapper';
 import ContainerMain from './components/ContainerMain'
 import Title from './components/Title'
 import Instructions from './components/Instructions'
+import './App.css'
 
 
 class App extends Component {
@@ -19,25 +20,25 @@ class App extends Component {
 
   shuffleImg = id => {
     let userChoice = this.state.userChoice;
-      console.log(userChoice);
 
     if (userChoice.includes(id)) {
-      console.log(userChoice.length)
-      console.log(this.state.topScore)
-      if (userChoice.length > this.state.topScore) {
-        this.setState({topScore: userChoice.length})
-      }
-      this.setState({score: 0, userChoice: [], message: "OOPs!! Game Over.  Pick an image to restart."});
-      return;
-    } else {
+    
+        if (userChoice.length > this.state.topScore) {
+          this.setState({topScore: userChoice.length})
+        }
+        this.setState({score: 0, userChoice: [], message: "OOPs!! Game Over.  Pick an image to restart."});
+        return;
+
+      } else {
       userChoice.push(id)
 
-      if (userChoice.length === 9) {
-        this.setState({score: 8, message: "You win.  Click to play again"});
-        return;
-      }
+    if (userChoice.length === 12) {
+      this.setState({score: 12, message: "You win.  Click an image to play again", userChoice:[]});
+      return;
+    }
 
-      this.setState({ images, score : userChoice.length, message: "You're doing good!"});
+    this.setState({ images, score : userChoice.length, message: "You're doing good!"});
+
       for (let i = images.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [images [i], images [j]] = [images[j], images[i]];
@@ -65,10 +66,10 @@ class App extends Component {
               />
             ))}
           </ContainerMain>
-        
+        <footer>
+          <p className="foot">Clicky Game by C. Shane Brown</p>
+        </footer>
       </Wrapper>
-      
-      
     );
   }
 }
